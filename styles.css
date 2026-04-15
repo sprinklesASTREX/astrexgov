@@ -327,7 +327,7 @@ dd {
 
 .page-links {
     display: grid;
-    grid-template-columns: repeat(3, minmax(0, 1fr));
+    grid-template-columns: repeat(4, minmax(0, 1fr));
     gap: 1px;
     margin-bottom: 60px;
     background: var(--line);
@@ -414,6 +414,67 @@ dd {
     width: 100%;
     height: 100%;
     border: 0;
+}
+
+.streaming-hero {
+    display: grid;
+    grid-template-columns: minmax(0, 0.62fr) minmax(0, 1fr);
+    gap: 34px;
+    align-items: center;
+    padding: 48px 0;
+    border-top: 1px solid var(--ink);
+}
+
+.streaming-hero h1 {
+    font-size: clamp(3.9rem, 11vw, 8.2rem);
+}
+
+.stream-card {
+    padding: 18px;
+    background: var(--panel);
+    border: 1px solid var(--line);
+}
+
+.stream-actions {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 12px;
+    margin-top: 16px;
+}
+
+.stream-library {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 1px;
+    margin-bottom: 64px;
+    background: var(--line);
+    border: 1px solid var(--line);
+}
+
+.stream-slot {
+    min-height: 220px;
+    padding: 24px;
+    background: var(--panel);
+}
+
+.stream-slot span {
+    display: block;
+    margin-bottom: 28px;
+    color: var(--accent);
+    font-size: 0.8rem;
+    font-weight: 800;
+    text-transform: uppercase;
+}
+
+.stream-slot strong {
+    display: block;
+    margin-bottom: 10px;
+    font-size: 1.35rem;
+    line-height: 1.1;
+}
+
+.stream-slot p {
+    margin-bottom: 0;
 }
 
 .info-list {
@@ -524,7 +585,9 @@ dd {
     .page-links,
     .info-hero,
     .info-section,
-    .video-panel {
+    .video-panel,
+    .streaming-hero,
+    .stream-library {
         grid-template-columns: 1fr;
     }
 
