@@ -56,9 +56,18 @@ img {
 }
 
 .brand {
+    display: flex;
+    align-items: center;
+    gap: 10px;
     font-size: 1.35rem;
     font-weight: 800;
     text-transform: uppercase;
+}
+
+.brand-logo {
+    width: 42px;
+    height: 42px;
+    object-fit: contain;
 }
 
 .nav-links {
@@ -261,6 +270,7 @@ figcaption {
 .info-section,
 .video-panel,
 .mission-video,
+.build-article,
 .news-article {
     border-top: 1px solid var(--ink);
 }
@@ -590,6 +600,17 @@ dd {
     margin: 34px auto 0;
 }
 
+.build-article {
+    display: grid;
+    grid-template-columns: minmax(0, 0.58fr) minmax(0, 1fr);
+    gap: 34px;
+    padding: 42px 0;
+}
+
+.build-article .article-body {
+    margin-top: 0;
+}
+
 .article-body p {
     color: var(--ink);
     font-size: 1.08rem;
@@ -629,6 +650,7 @@ dd {
     .info-section,
     .video-panel,
     .mission-video,
+    .build-article,
     .streaming-hero,
     .stream-library {
         grid-template-columns: 1fr;
