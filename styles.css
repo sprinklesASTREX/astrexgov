@@ -260,6 +260,7 @@ figcaption {
 .info-hero,
 .info-section,
 .video-panel,
+.mission-video,
 .news-article {
     border-top: 1px solid var(--ink);
 }
@@ -505,6 +506,19 @@ dd {
     margin-bottom: 0;
 }
 
+.mission-video {
+    display: grid;
+    grid-template-columns: minmax(0, 0.55fr) minmax(0, 1fr);
+    gap: 34px;
+    align-items: center;
+    padding: 40px 0;
+}
+
+.mission-video video {
+    width: 100%;
+    background: #000;
+}
+
 .info-list {
     display: grid;
     gap: 16px;
@@ -614,6 +628,7 @@ dd {
     .info-hero,
     .info-section,
     .video-panel,
+    .mission-video,
     .streaming-hero,
     .stream-library {
         grid-template-columns: 1fr;
