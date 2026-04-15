@@ -1,5 +1,29 @@
 document.addEventListener("DOMContentLoaded", () => {
     const countdown = document.querySelector("#launch-countdown");
+    const themeToggles = document.querySelectorAll(".theme-toggle");
+    const savedTheme = localStorage.getItem("astrex-theme");
+
+    if (savedTheme === "dark") {
+        document.body.classList.add("dark-mode");
+    }
+
+    function updateThemeButtons() {
+        const isDark = document.body.classList.contains("dark-mode");
+        themeToggles.forEach((button) => {
+            button.textContent = isDark ? "Light" : "Dark";
+            button.setAttribute("aria-label", isDark ? "Switch to light mode" : "Switch to dark mode");
+        });
+    }
+
+    themeToggles.forEach((button) => {
+        button.addEventListener("click", () => {
+            document.body.classList.toggle("dark-mode");
+            localStorage.setItem("astrex-theme", document.body.classList.contains("dark-mode") ? "dark" : "light");
+            updateThemeButtons();
+        });
+    });
+
+    updateThemeButtons();
 
     if (!countdown) {
         return;

@@ -15,6 +15,7 @@
             <a href="space.html">Space</a>
             <a href="news.html">News</a>
             <a href="streaming.html">Streaming</a>
+            <button class="theme-toggle" type="button" aria-label="Toggle dark mode">Dark</button>
         </nav>
     </header>
 
@@ -22,9 +23,9 @@
         <section class="streaming-hero" aria-labelledby="stream-title">
             <div>
                 <p class="kicker">Astrex Streaming</p>
-                <h1 id="stream-title">Mission Video</h1>
+                <h1 id="stream-title">Live Mission Feed</h1>
                 <p>
-                    Live orbital feeds, launch footage, mission replays, and future Nexus video uploads will live here.
+                    Live orbital feeds, launch footage, mission replays, and future Nexus uploads will live here.
                 </p>
             </div>
 
@@ -32,18 +33,18 @@
                 <p class="kicker">ISS Video Feed</p>
                 <h2>Live Views From Orbit</h2>
                 <p>
-                    NASA's ISS stream can show Earth views from outside the station and inside views when crew activities are available.
+                    NASA's ISS stream shows orbital coverage from the station when the live feed is available.
                 </p>
                 <div class="video-frame">
                     <iframe
-                        src="https://www.youtube-nocookie.com/embed/FV4Q9DryTG8"
+                        src="https://www.youtube-nocookie.com/embed/sWasdbDVNvc"
                         title="Live Video from the International Space Station"
                         allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
                         allowfullscreen>
                     </iframe>
                 </div>
                 <div class="stream-actions">
-                    <a class="button" href="https://www.youtube.com/watch?v=FV4Q9DryTG8">Watch On YouTube</a>
+                    <a class="button" href="https://www.youtube.com/live/sWasdbDVNvc">Watch On YouTube</a>
                     <a class="text-link" href="orbit.html">Open Orbit Notes</a>
                 </div>
             </div>
@@ -53,7 +54,7 @@
             <article class="stream-slot">
                 <span>Upcoming</span>
                 <strong>Nexus I Launch Footage</strong>
-                <p>Upload the launch video and it can be embedded here as the main mission replay.</p>
+                <p>Upload the launch video and it can become the main mission replay on this page.</p>
             </article>
             <article class="stream-slot">
                 <span>Upcoming</span>
@@ -65,6 +66,11 @@
                 <strong>Orbit Test Replay</strong>
                 <p>Thin rocket orbit tests and satellite deployment clips can be added when ready.</p>
             </article>
+            <article class="stream-slot">
+                <span>Source</span>
+                <strong>Video Upload Plan</strong>
+                <p>Future Astrex videos can be added as YouTube embeds, local video files, or linked mission clips.</p>
+            </article>
         </section>
     </main>
 
@@ -72,5 +78,6 @@
         <span>Astrex Streaming</span>
         <span>Live feeds and launch footage</span>
     </footer>
+    <script src="../script.js"></script>
 </body>
 </html>
