@@ -249,6 +249,32 @@ figcaption {
     border: 1px solid var(--line);
 }
 
+.roadmap-status {
+    padding: 18px;
+    background: var(--panel);
+    border: 1px solid var(--line);
+}
+
+.roadmap-status span {
+    display: block;
+    margin-bottom: 10px;
+    color: var(--accent);
+    font-size: 0.78rem;
+    font-weight: 800;
+    text-transform: uppercase;
+}
+
+.roadmap-status strong {
+    display: block;
+    margin-bottom: 8px;
+    font-size: clamp(1.4rem, 3vw, 2.4rem);
+    line-height: 1;
+}
+
+.roadmap-status p {
+    margin: 0;
+}
+
 .mission-grid article {
     min-height: 270px;
     padding: 28px;
@@ -524,6 +550,25 @@ dd {
     padding: 40px 0;
 }
 
+.roadmap-timeline {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 1px;
+    margin-bottom: 64px;
+    background: var(--line);
+    border: 1px solid var(--line);
+}
+
+.roadmap-timeline article {
+    min-height: 240px;
+    padding: 24px;
+    background: var(--panel);
+}
+
+.roadmap-timeline h2 {
+    font-size: 1.45rem;
+}
+
 .mission-video video {
     width: 100%;
     background: #000;
@@ -651,6 +696,7 @@ dd {
     .video-panel,
     .mission-video,
     .build-article,
+    .roadmap-timeline,
     .streaming-hero,
     .stream-library {
         grid-template-columns: 1fr;
