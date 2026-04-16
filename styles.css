@@ -297,6 +297,7 @@ figcaption {
 .video-panel,
 .mission-video,
 .build-article,
+.search-hero,
 .news-article {
     border-top: 1px solid var(--ink);
 }
@@ -569,6 +570,73 @@ dd {
     font-size: 1.45rem;
 }
 
+.search-hero {
+    display: grid;
+    grid-template-columns: minmax(0, 0.7fr) minmax(0, 1fr);
+    gap: 34px;
+    align-items: end;
+    padding: 48px 0;
+}
+
+.search-form {
+    display: grid;
+    gap: 10px;
+}
+
+.search-form label {
+    color: var(--accent);
+    font-size: 0.78rem;
+    font-weight: 800;
+    text-transform: uppercase;
+}
+
+.search-form input {
+    width: 100%;
+    padding: 16px;
+    border: 1px solid var(--ink);
+    border-radius: 2px;
+    background: var(--panel);
+    color: var(--ink);
+    font: inherit;
+    font-size: 1.05rem;
+}
+
+.search-results {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 1px;
+    margin-bottom: 64px;
+    background: var(--line);
+    border: 1px solid var(--line);
+}
+
+.search-result {
+    min-height: 200px;
+    padding: 24px;
+    background: var(--panel);
+}
+
+.search-result span {
+    display: block;
+    margin-bottom: 18px;
+    color: var(--accent);
+    font-size: 0.78rem;
+    font-weight: 800;
+    text-transform: uppercase;
+}
+
+.search-result strong {
+    display: block;
+    margin-bottom: 10px;
+    font-size: 1.35rem;
+    line-height: 1.1;
+}
+
+.search-empty {
+    padding: 24px;
+    background: var(--panel);
+}
+
 .mission-video video {
     width: 100%;
     background: #000;
@@ -696,6 +764,8 @@ dd {
     .video-panel,
     .mission-video,
     .build-article,
+    .search-hero,
+    .search-results,
     .roadmap-timeline,
     .streaming-hero,
     .stream-library {

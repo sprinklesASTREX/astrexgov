@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Astrex | Search</title>
+    <link rel="stylesheet" href="../styles.css">
+</head>
+<body>
+    <header class="site-header">
+        <a class="brand" href="../index.html">
+            <img class="brand-logo" src="../assets/images/astrex-logo-clear.png" alt="Astrex logo">
+            <span>Astrex</span>
+        </a>
+        <nav class="nav-links" aria-label="Main navigation">
+            <a href="../index.html">Nexus I</a>
+            <a href="build.html">Build</a>
+            <a href="roadmap.html">Roadmap</a>
+            <a href="orbit.html">Orbit</a>
+            <a href="space.html">Space</a>
+            <a href="news.html">News</a>
+            <a href="streaming.html">Streaming</a>
+            <a href="search.html">Search</a>
+            <button class="theme-toggle" type="button" aria-label="Toggle dark mode">Dark</button>
+        </nav>
+    </header>
+
+    <main>
+        <section class="search-hero">
+            <div>
+                <p class="kicker">Astrex Search</p>
+                <h1>Search</h1>
+                <p>
+                    Find missions, rocket plans, launch updates, streaming footage, orbit notes, and roadmap items.
+                </p>
+            </div>
+            <form class="search-form" role="search">
+                <label for="site-search">Search Astrex</label>
+                <input id="site-search" type="search" placeholder="Try Nexus I, SRS 91, satellite, engine test..." autocomplete="off">
+            </form>
+        </section>
+
+        <section class="search-results" id="search-results" aria-live="polite"></section>
+    </main>
+
+    <footer class="site-footer">
+        <span>Astrex Search</span>
+        <span>Mission index</span>
+    </footer>
+    <script src="../script.js"></script>
+</body>
+</html>
