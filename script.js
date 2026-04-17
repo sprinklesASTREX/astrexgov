@@ -61,6 +61,12 @@ document.addEventListener("DOMContentLoaded", () => {
             },
             {
                 category: "News",
+                title: "Nexus I Gas Canister Failure",
+                text: "A gas canister failure delayed the Nexus I launch target to May 29 at 5:30 PM Eastern.",
+                url: "news.html"
+            },
+            {
+                category: "News",
                 title: "Nexus I Medium Fuel Tank Issue",
                 text: "A medium fuel tank issue may delay the launch, but Astrex hopes the May window holds.",
                 url: "news.html"
@@ -108,7 +114,7 @@ document.addEventListener("DOMContentLoaded", () => {
         return;
     }
 
-    const launchDate = new Date("2026-05-24T17:30:00-04:00");
+    const launchDate = new Date("2026-05-29T17:30:00-04:00");
 
     function renderCountdown() {
         const now = new Date();
