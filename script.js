@@ -61,6 +61,12 @@ document.addEventListener("DOMContentLoaded", () => {
             },
             {
                 category: "News",
+                title: "Nexus I Medium Fuel Tank Issue",
+                text: "A medium fuel tank issue may delay the launch, but Astrex hopes the May window holds.",
+                url: "news.html"
+            },
+            {
+                category: "News",
                 title: "Nexus I Orbit And Engine Test",
                 text: "Engine response, orbit insertion behavior, May launch confidence, and flight readiness.",
                 url: "news.html"
