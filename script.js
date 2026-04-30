@@ -61,6 +61,12 @@ document.addEventListener("DOMContentLoaded", () => {
             },
             {
                 category: "News",
+                title: "Nexus I Final Tests Set For May 1",
+                text: "Launch plans still stand, with final launch tests scheduled for tomorrow, May 1, 2026.",
+                url: "news.html"
+            },
+            {
+                category: "News",
                 title: "Nexus I Gas Canister Failure",
                 text: "A gas canister failure delayed the Nexus I launch target to May 29 at 5:30 PM Eastern.",
                 url: "news.html"
